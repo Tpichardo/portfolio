@@ -1,7 +1,7 @@
 import React from 'react';
 import selfImg from '../Assets/HomeImg.png'
 
-const About = () => {
+const Home = () => {
     return (
         <section>
             <img src={selfImg} alt="An image of me smiling" />
@@ -12,5 +12,5 @@ const About = () => {
     );
 }
 
-export default About;
+export default Home;
 
