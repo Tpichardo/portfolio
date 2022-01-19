@@ -3,7 +3,7 @@ import HikingImg from '../Assets/HikingImg.jpg'
 
 const About = () => {
     return (
-        <section className="About">
+        <section className="about" id='about'>
             <div className="hikingImg">
                 <img src={HikingImg} alt="Me looking out to the mountains" />
             </div>

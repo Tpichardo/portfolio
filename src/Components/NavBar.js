@@ -1,31 +1,72 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 const NavBar = () => {
     return (
         <header>
-            <h1 className="logo">TP</h1>
+            <h1 className="logo">
+                <Link
+                    activeClass="active"
+                    to="home"
+                    spy={true}
+                    smooth={true}
+                    duration={500} >
+                    TP
+                </Link>
+            </h1>
             <nav>
                 <ul>
                     <li>
-                        <NavLink to="/">Home</NavLink>
+                        <Link
+                            activeClass="active"
+                            to="home" spy={true}
+                            smooth={true}
+                            duration={500} >
+                            Home
+                        </Link>
                     </li>
                     <li>
-                        <NavLink to="/about">About</NavLink>
+                        <Link
+                            activeClass="active"
+                            to="about" spy={true}
+                            smooth={true}
+                            duration={500} >
+                            About
+                        </Link>
                     </li>
                     <li>
-                        <NavLink to="/skills-tools">Skills|Tools</NavLink>
+                        <Link
+                            activeClass="active"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            to="skills-tools">
+                            Skills|Tools
+                        </Link>
                     </li>
                     <li>
-                        <NavLink to="/projects">Projects</NavLink>
+                        <Link
+                            activeClass="active"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            to="projects">
+                            Projects
+                        </Link >
                     </li>
                     <li>
-                        <NavLink to="contact">Contact</NavLink>
+                        <Link
+                            activeClass="active"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            to="contact">
+                            Contact
+                        </Link>
                     </li>
                 </ul>
             </nav>
-        </header>
-    );
+        </header>);
 }
 
 export default NavBar;

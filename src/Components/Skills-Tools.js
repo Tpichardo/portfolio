@@ -2,7 +2,7 @@ import React from 'react';
 
 const Skills = () => {
     return (
-        <h1>Skills</h1>
+        <h1 id="skills-tools">Skills</h1>
     );
 }
 
