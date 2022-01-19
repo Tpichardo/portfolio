@@ -3,7 +3,7 @@ import selfImg from '../Assets/HomeImg.png'
 
 const Home = () => {
     return (
-        <section>
+        <section className="Home">
             <div className="selfImg">
                 <img src={selfImg} alt="me smiling" />
             </div>
