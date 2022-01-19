@@ -19,48 +19,55 @@ const NavBar = () => {
                     <li>
                         <Link
                             activeClass="active"
-                            to="home" spy={true}
+                            to="home"
+                            spy={true}
                             smooth={true}
-                            duration={500} >
+                            duration={500}
+                        >
                             Home
                         </Link>
                     </li>
                     <li>
                         <Link
                             activeClass="active"
-                            to="about" spy={true}
+                            to="about"
+                            spy={true}
                             smooth={true}
-                            duration={500} >
+                            duration={500}
+                        >
                             About
                         </Link>
                     </li>
                     <li>
                         <Link
                             activeClass="active"
+                            to="skills-tools"
                             spy={true}
                             smooth={true}
                             duration={500}
-                            to="skills-tools">
+                        >
                             Skills|Tools
                         </Link>
                     </li>
                     <li>
                         <Link
                             activeClass="active"
+                            to="projects"
                             spy={true}
                             smooth={true}
                             duration={500}
-                            to="projects">
+                        >
                             Projects
                         </Link >
                     </li>
                     <li>
                         <Link
                             activeClass="active"
+                            to="contact"
                             spy={true}
                             smooth={true}
                             duration={500}
-                            to="contact">
+                        >
                             Contact
                         </Link>
                     </li>
