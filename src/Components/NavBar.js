@@ -71,6 +71,9 @@ const NavBar = () => {
                             Contact
                         </Link>
                     </li>
+                    <li onClick={() => window.open('https://drive.google.com/file/d/1_udUkEmVZC4Sg7m-ZSx6hiWNhy5-Xj2b/view?usp=sharing')}>
+                        Resume
+                    </li>
                 </ul>
             </nav>
         </header>);
