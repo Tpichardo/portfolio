@@ -1,15 +1,16 @@
-import { initializeApp } from 'firebase/app';
-import "firebase/database";
+import firebase from 'firebase/compat/app';
+import "firebase/compat/database";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDG9zZ0SykplfrG1rwPYL8Q49WST1zNHAg",
-    authDomain: "portfolio-contact-c95f5.firebaseapp.com",
-    projectId: "portfolio-contact-c95f5",
-    storageBucket: "portfolio-contact-c95f5.appspot.com",
-    messagingSenderId: "135800253513",
-    appId: "1:135800253513:web:352938f7a79914e14f6398"
+    apiKey: "AIzaSyBhCGsydDb0tye4xmmQDSUzoRk2o06RR10",
+    authDomain: "portfolio-contact-ce4c3.firebaseapp.com",
+    projectId: "portfolio-contact-ce4c3",
+    storageBucket: "portfolio-contact-ce4c3.appspot.com",
+    messagingSenderId: "842172602250",
+    appId: "1:842172602250:web:234d6064d9ecc1e85ada73",
+    measurementId: "G-TEEJ0DNN95"
 };
 
-const fireObj = initializeApp(firebaseConfig);
+const fireDb = firebase.initializeApp(firebaseConfig);
 
-export default fireObj.database().ref();
+export default fireDb.database().ref();

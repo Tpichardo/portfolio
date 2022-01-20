@@ -1,5 +1,6 @@
-import React from 'react';
-import { useState } from 'react';
+import React from "react";
+import { useState } from "react";
+import firebaseDB from "../firebase";
 
 const Contact = () => {
     const [contactInfo, setContactInfo] = useState({
@@ -17,6 +18,12 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        firebaseDB.child("contacts").push(contactInfo);
+        setContactInfo({
+            name: "",
+            email: "",
+            message: ""
+        })
     };
 
     return (
@@ -45,16 +52,16 @@ const Contact = () => {
                         value={message}
                         placeholder='Message'
                         onChange={handleInputChange}
-                        requrired
+                        required
                     >
                     </textarea>
                     <input type="submit" value="Let's Connect!" />
                 </form>
                 <div className="right-contact">
                     <h3>Feeling Social?</h3>
-                    <i class="devicon-twitter-original"></i>
-                    <i class="devicon-linkedin-plain"></i>
-                    <i class="devicon-github-original"></i>
+                    <i className="devicon-twitter-original"></i>
+                    <i className="devicon-linkedin-plain"></i>
+                    <i className="devicon-github-original"></i>
                 </div>
             </div>
         </section>
