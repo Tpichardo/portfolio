@@ -6,22 +6,22 @@ const Contact = () => {
         name: "",
         email: "",
         message: ""
-    })
+    });
 
     const { name, email, message } = contactInfo;
 
     const handleInputChange = (e) => {
         let { name, value } = e.target;
-        setContactInfo({ ...contactInfo, [name]: [value] })
-    }
+        setContactInfo({ ...contactInfo, [name]: [value] });
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
-    }
+    };
 
     return (
         <section className="contact" id='contact'>
-            <div className="leftContact">
+            <div className="left-contact">
                 <h1>Let's Connect</h1>
                 <form onSubmit={handleSubmit}>
                     <input
@@ -50,6 +50,12 @@ const Contact = () => {
                     </textarea>
                     <input type="submit" value="Let's Connect!" />
                 </form>
+                <div className="right-contact">
+                    <h3>Feeling Social?</h3>
+                    <i class="devicon-twitter-original"></i>
+                    <i class="devicon-linkedin-plain"></i>
+                    <i class="devicon-github-original"></i>
+                </div>
             </div>
         </section>
     );
