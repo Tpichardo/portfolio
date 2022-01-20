@@ -17,7 +17,10 @@ const Skills = () => {
                 <i class="devicon-github-original"></i>
                 <i class="devicon-vscode-plain"></i>
                 <i class="devicon-figma-plain"></i>
+                <i class="devicon-trello-plain"></i>
+                <i class="devicon-firebase-plain"></i>
             </div>
+            <h3>Currently Working on:</h3>
             <p className="currently">
                 Improving my CSS skills with Kevin Powell’s “Conquering Responsive Layouts” course and learning Data Structures & Algorithms.
                 <span onClick={() => window.open('https://twitter.com/PichardoTalia')}>
