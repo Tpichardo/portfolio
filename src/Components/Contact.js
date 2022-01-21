@@ -44,6 +44,14 @@ const Contact = () => {
             <div className="left-contact">
                 <h1>Let's Connect</h1>
                 <form onSubmit={handleSubmit}>
+                    {/* honeypot */}
+                    <input
+                        type="text"
+                        name="a_password"
+                        style={{ display: "none" }}
+                        tabindex="-1"
+                        autocomplete="off"
+                    />
                     <input
                         type="text"
                         name="name"
