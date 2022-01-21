@@ -17,8 +17,6 @@ const Skills = () => {
                 <i className="devicon-github-original"></i>
                 <i className="devicon-vscode-plain"></i>
                 <i className="devicon-figma-plain"></i>
-                <i className="devicon-trello-plain"></i>
-                <i className="devicon-firebase-plain"></i>
             </div>
             <h3>Currently Working on:</h3>
             <p className="currently">
