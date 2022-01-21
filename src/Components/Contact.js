@@ -1,6 +1,6 @@
-import React from "react";
-import { useState } from "react";
-import firebaseDB from "../firebase";
+import React from 'react';
+import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const [contactInfo, setContactInfo] = useState({
@@ -18,7 +18,20 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        firebaseDB.child("contacts").push(contactInfo);
+
+
+        emailjs.send(
+            'contact_service',
+            'contact_form',
+            contactInfo,
+            'user_J4BuZ4UH3yBM3HuzOnHje'
+        )
+            .then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+            }).catch((error) => {
+                console.log('FAILED...', error);
+            })
+
         setContactInfo({
             name: "",
             email: "",
