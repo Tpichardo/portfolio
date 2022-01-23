@@ -1,9 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=PT+Sans&display=swap");
+
 body {
   margin: 0;
-  font-family: "PT Sans", sans-serif;
+  font-size: 1.125rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* typography */
+
+h1,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h3 {
+  font-family: "Bitter", serif;
+  line-height: 1;
+}
+
+p {
+  font-family: "PT Sans", sans-serif;
+  margin-bottom: 0.85em;
 }
 
 code {

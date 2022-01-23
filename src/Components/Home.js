@@ -9,9 +9,9 @@ const Home = () => {
                 <img src={selfImg} alt="me smiling" />
             </div>
             <div className="home-content">
-                <p>Hi, I’m Talía! A Full Stack Web Developer
+                <h1>Hi, I’m Talía! A Full Stack Web Developer
                     and <span>Fitness Enthusiast</span>
-                </p>
+                </h1>
             </div>
         </section>
     );
