@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
+import './NavBar.css'
 
 const NavBar = () => {
     return (
@@ -46,7 +47,7 @@ const NavBar = () => {
                             smooth={true}
                             duration={500}
                         >
-                            Skills|Tools
+                            Skills
                         </Link>
                     </li>
                     <li>
@@ -70,9 +71,6 @@ const NavBar = () => {
                         >
                             Contact
                         </Link>
-                    </li>
-                    <li onClick={() => window.open('https://drive.google.com/file/d/1_udUkEmVZC4Sg7m-ZSx6hiWNhy5-Xj2b/view?usp=sharing')}>
-                        Resume
                     </li>
                 </ul>
             </nav>
