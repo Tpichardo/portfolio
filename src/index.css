@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=PT+Sans&display=swap");
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   font-size: 1.125rem;
@@ -24,6 +30,13 @@ h3 {
 p {
   font-family: "PT Sans", sans-serif;
   margin-bottom: 0.85em;
+}
+
+/* images */
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 code {
