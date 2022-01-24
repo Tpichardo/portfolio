@@ -1,23 +1,55 @@
-nav ul {
+header {
   display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em;
 }
 
-nav a {
+/* mobile menu  */
+.header_span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background-color: rgb(39, 35, 64);
+}
+.header_span:not(last-child) {
+  margin-bottom: 3px;
+}
+
+.primary-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.nav_item {
   display: inline-block;
-  padding: 0.4em;
   text-decoration: none;
+  margin-left: 1em;
 }
 
 nav a:hover,
 nav a:focus {
   color: rgb(138, 128, 253);
   text-decoration: underline;
+  cursor: pointer;
 }
 
-header {
-  padding: 1em 0 2em;
+.resume {
+  cursor: pointer;
+}
+
+/* this style will apply until we get to 39em */
+@media (max-width: 39em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+/* this style will apply after we pass 39em */
+@media (min-width: 39em) {
+  .hide-for-desktop {
+    display: none;
+  }
 }

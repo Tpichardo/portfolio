@@ -5,18 +5,26 @@ import './NavBar.css'
 const NavBar = () => {
     return (
         <header>
-            <h1 className="logo">
-                <Link
-                    activeClass="active"
-                    to="home"
-                    spy={true}
-                    smooth={true}
-                    duration={500} >
-                    TP
-                </Link>
-            </h1>
+            <div className="logo">
+                <h1>
+                    <Link
+                        activeClass="active"
+                        to="home"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                    >
+                        TP
+                    </Link>
+                </h1>
+            </div>
             <nav>
-                <ul>
+                <Link className="hamburger_menu hide-for-desktop">
+                    <span className="header_span"></span>
+                    <span className="header_span"></span>
+                    <span className="header_span"></span>
+                </Link>
+                <ul className='primary-nav hide-for-mobile'>
                     <li>
                         <Link
                             activeClass="active"
@@ -24,6 +32,7 @@ const NavBar = () => {
                             spy={true}
                             smooth={true}
                             duration={500}
+                            className="nav_item"
                         >
                             Home
                         </Link>
@@ -35,6 +44,7 @@ const NavBar = () => {
                             spy={true}
                             smooth={true}
                             duration={500}
+                            className="nav_item"
                         >
                             About
                         </Link>
@@ -46,6 +56,7 @@ const NavBar = () => {
                             spy={true}
                             smooth={true}
                             duration={500}
+                            className="nav_item"
                         >
                             Skills
                         </Link>
@@ -57,6 +68,7 @@ const NavBar = () => {
                             spy={true}
                             smooth={true}
                             duration={500}
+                            className="nav_item"
                         >
                             Projects
                         </Link >
@@ -68,9 +80,15 @@ const NavBar = () => {
                             spy={true}
                             smooth={true}
                             duration={500}
+                            className="nav_item"
                         >
                             Contact
                         </Link>
+                    </li>
+                    <li onClick={() => window.open('https://drive.google.com/file/d/1_udUkEmVZC4Sg7m-ZSx6hiWNhy5-Xj2b/view?usp=sharing')}
+                        className="nav_item resume"
+                    >
+                        Resume
                     </li>
                 </ul>
             </nav>
