@@ -32,7 +32,7 @@ const NavBar = () => {
                             spy={true}
                             smooth={true}
                             duration={500}
-                            className="nav_item"
+                            className="nav-item"
                         >
                             Home
                         </Link>
@@ -44,7 +44,7 @@ const NavBar = () => {
                             spy={true}
                             smooth={true}
                             duration={500}
-                            className="nav_item"
+                            className="nav-item"
                         >
                             About
                         </Link>
@@ -56,7 +56,7 @@ const NavBar = () => {
                             spy={true}
                             smooth={true}
                             duration={500}
-                            className="nav_item"
+                            className="nav-item"
                         >
                             Skills
                         </Link>
@@ -68,7 +68,7 @@ const NavBar = () => {
                             spy={true}
                             smooth={true}
                             duration={500}
-                            className="nav_item"
+                            className="nav-item"
                         >
                             Projects
                         </Link >
@@ -80,13 +80,13 @@ const NavBar = () => {
                             spy={true}
                             smooth={true}
                             duration={500}
-                            className="nav_item"
+                            className="nav-item"
                         >
                             Contact
                         </Link>
                     </li>
                     <li onClick={() => window.open('https://drive.google.com/file/d/1_udUkEmVZC4Sg7m-ZSx6hiWNhy5-Xj2b/view?usp=sharing')}
-                        className="nav_item resume"
+                        className="nav-item resume"
                     >
                         Resume
                     </li>
