@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 
 const NavLinks = () => {
     return (
-        <ul className='primary-nav hide-for-mobile'>
+        <ul className='primary-nav'>
             <li>
                 <Link
                     activeClass="active"
