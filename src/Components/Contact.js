@@ -49,8 +49,8 @@ const Contact = () => {
                         type="text"
                         name="a_password"
                         style={{ display: "none" }}
-                        tabindex="-1"
-                        autocomplete="off"
+                        tabIndex="-1"
+                        autoComplete="off"
                     />
                     <input
                         type="text"
