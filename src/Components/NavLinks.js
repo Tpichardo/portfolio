@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 
-const NavLinks = () => {
+const NavLinks = (props) => {
     return (
         <ul className='primary-nav'>
             <li>
@@ -12,6 +12,8 @@ const NavLinks = () => {
                     smooth={true}
                     duration={500}
                     className="nav-item"
+                    // closes mobile menu after a link is selected
+                    onClick={() => props.isMobile && props.closeBurgerMenu()}
                 >
                     Home
                 </Link>
@@ -24,6 +26,8 @@ const NavLinks = () => {
                     smooth={true}
                     duration={500}
                     className="nav-item"
+                    // closes mobile menu after a link is selected
+                    onClick={() => props.isMobile && props.closeBurgerMenu()}
                 >
                     About
                 </Link>
@@ -36,6 +40,8 @@ const NavLinks = () => {
                     smooth={true}
                     duration={500}
                     className="nav-item"
+                    // closes mobile menu after a link is selected
+                    onClick={() => props.isMobile && props.closeBurgerMenu()}
                 >
                     Skills
                 </Link>
@@ -48,6 +54,8 @@ const NavLinks = () => {
                     smooth={true}
                     duration={500}
                     className="nav-item"
+                    // closes mobile menu after a link is selected
+                    onClick={() => props.isMobile && props.closeBurgerMenu()}
                 >
                     Projects
                 </Link >
@@ -60,6 +68,8 @@ const NavLinks = () => {
                     smooth={true}
                     duration={500}
                     className="nav-item"
+                    // closes mobile menu after a link is selected
+                    onClick={() => props.isMobile && props.closeBurgerMenu()}
                 >
                     Contact
                 </Link>
