@@ -10,17 +10,37 @@ header {
 .mobileNav {
   display: none;
 }
-/* .header_span {
-  display: block;
-  width: 26px;
-  height: 2px;
-  background-color: rgb(39, 35, 64);
-  transition: all 300ms ease-in-out;
-  transform-origin: left center;
+
+.burgerMenu {
+  display: inline-block;
+  cursor: pointer;
 }
-.header_span:not(last-child) {
-  margin-bottom: 5px;
-} */
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 38px;
+  height: 3px;
+  background-color: rgb(39, 35, 64);
+  margin: 5px;
+  transition: all 300ms ease-in-out;
+}
+
+/* Rotate first bar */
+.open .bar1 {
+  transform: rotate(-45deg) translate(-6px, 7px);
+}
+
+/* Fade out the second bar */
+.open .bar2 {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+/* Rotate last bar */
+.open .bar3 {
+  transform: rotate(45deg) translate(-4px, -7px);
+}
 
 .primary-nav {
   margin: 0;
@@ -50,7 +70,6 @@ nav a:focus {
   transition: color 200ms ease-in-out;
 }
 
-/* this style will apply until we get to 39em */
 @media (max-width: 35em) {
   .desktopNav {
     display: none;
@@ -58,13 +77,5 @@ nav a:focus {
 
   .mobileNav {
     display: flex;
-    background-color: aqua;
   }
 }
-
-/* this style will apply after we pass 39em */
-/* @media (min-width: 39em) {
-  .hide-for-desktop {
-    display: none;
-  }
-} */
