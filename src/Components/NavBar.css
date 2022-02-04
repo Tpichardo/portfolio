@@ -19,16 +19,17 @@ header {
 .bar1,
 .bar2,
 .bar3 {
-  width: 38px;
-  height: 3px;
+  width: 2.375rem;
+  height: 0.219rem;
   background-color: rgb(39, 35, 64);
-  margin: 5px;
-  transition: all 300ms ease-in-out;
+  margin: 5px 0;
+  transition: all 0.35s linear;
+  transform-origin: 7px 2px;
 }
 
 /* Rotate first bar */
 .open .bar1 {
-  transform: rotate(-45deg) translate(-6px, 7px);
+  transform: rotate(45deg);
 }
 
 /* Fade out the second bar */
@@ -39,7 +40,7 @@ header {
 
 /* Rotate last bar */
 .open .bar3 {
-  transform: rotate(45deg) translate(-4px, -7px);
+  transform: rotate(-45deg);
 }
 
 .primary-nav {
@@ -77,5 +78,22 @@ nav a:focus {
 
   .mobileNav {
     display: flex;
+  }
+
+  .primary-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    top: 5rem;
+    right: 0;
+    width: 100%;
+    border-top: 2px solid rgb(138, 128, 253);
+  }
+
+  .nav-item {
+    padding: 1.125rem;
+    display: flex;
+    justify-content: center;
   }
 }
