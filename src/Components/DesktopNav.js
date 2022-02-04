@@ -4,7 +4,7 @@ import NavLinks from "./NavLinks";
 
 const DesktopNav = () => {
     return (
-        <header>
+        <header className="desktopNav">
             <div className="logo">
                 <h1>
                     <Link

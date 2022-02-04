@@ -1,10 +1,17 @@
 import React from 'react';
 import { Link } from 'react-scroll';
+import { useState } from 'react';
+import classNames from 'classnames';
 import NavLinks from './NavLinks';
 
 const MobileNav = () => {
+    const [isOpen, setOpen] = useState(false);
+
+    const active = classNames('burgerMenu', {
+        open: isOpen,
+    });
     return (
-        <header>
+        <header className='mobileNav'>
             <div className="logo">
                 <h1>
                     <Link
@@ -19,7 +26,12 @@ const MobileNav = () => {
                 </h1>
             </div>
             <nav>
-                <NavLinks />
+                <div className={active} onClick={() => setOpen(!isOpen)}>
+                    <div className='bar1'></div>
+                    <div className='bar2'></div>
+                    <div className='bar3'></div>
+                </div>
+                {isOpen && <NavLinks />}
             </nav>
         </header>
     )
