@@ -7,9 +7,14 @@ import NavLinks from './NavLinks';
 const MobileNav = () => {
     const [isOpen, setOpen] = useState(false);
 
+    //Appends the open class to burgerMenu when isOpen is true
     const active = classNames('burgerMenu', {
         open: isOpen,
     });
+
+    // function to close burgerMenu after link is selected
+    const closeBurgerMenu = () => setOpen(false);
+
     return (
         <header className='mobileNav'>
             <div className="logo">
@@ -31,7 +36,7 @@ const MobileNav = () => {
                     <div className='bar2'></div>
                     <div className='bar3'></div>
                 </div>
-                {isOpen && <NavLinks />}
+                {isOpen && <NavLinks isMobile={true} closeBurgerMenu={closeBurgerMenu} />}
             </nav>
         </header>
     )
