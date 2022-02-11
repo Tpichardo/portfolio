@@ -71,7 +71,7 @@ nav a:focus {
   transition: color 200ms ease-in-out;
 }
 
-@media (max-width: 35em) {
+@media (max-width: 40em) {
   .desktopNav {
     display: none;
   }
