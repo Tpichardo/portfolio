@@ -74,7 +74,7 @@ const NavLinks = (props) => {
                     Contact
                 </Link>
             </li>
-            <li onClick={() => window.open('https://drive.google.com/file/d/1_udUkEmVZC4Sg7m-ZSx6hiWNhy5-Xj2b/view?usp=sharing')}
+            <li onClick={() => window.open('https://drive.google.com/file/d/1-uUi7_0MC7j4FdUQoX6MuNFcQ7-HUKBF/view?usp=sharing')}
                 className="nav-item resume"
             >
                 Resume

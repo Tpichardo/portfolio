@@ -8,29 +8,21 @@ const Skills = () => {
             <div className="toolbox">
                 <i className="devicon-html5-plain"></i>
 
-
                 <i className="devicon-css3-plain"></i>
-
 
                 <i className="devicon-javascript-plain"></i>
 
-
                 <i className="devicon-react-original"></i>
-
 
                 <i className="devicon-nodejs-plain"></i>
 
                 <i className="devicon-postgresql-plain"></i>
 
-
                 <i className="devicon-vscode-plain"></i>
-
 
                 <i className="devicon-bootstrap-plain"></i>
 
-
                 <i className="devicon-git-plain"></i>
-
 
                 <i className="devicon-github-original"></i>
 
