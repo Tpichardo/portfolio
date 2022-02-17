@@ -26,6 +26,10 @@ span {
   color: rgb(138, 128, 253);
 }
 
+.twitter {
+  color: rgb(25, 140, 216);
+}
+
 .twitter:hover {
   cursor: pointer;
 }
