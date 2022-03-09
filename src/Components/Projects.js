@@ -11,7 +11,7 @@ const Projects = () => {
             <h1>Projects</h1>
             <p>Take a look at some my work bellow!</p>
             <div className='project_cards'>
-                <Card className="text-center" style={{ width: '35rem', margin: '1.8rem' }}>
+                <Card className="text-center card" >
                     <Card.Header>Social Karma</Card.Header>
                     <Card.Body>
                         <Card.Img variant="top" alt="home page for a workout buddy app with two people exercising" src={Soka} />
@@ -22,19 +22,19 @@ const Projects = () => {
                         <Button variant="primary" onClick={() => window.open('https://github.com/Tpichardo/Talia-SK')}>Github Repo</Button>
                     </Card.Body>
                 </Card>
-                <Card className="text-center" style={{ width: '35rem', margin: '1.8rem' }}>
+                <Card className="text-center card">
                     <Card.Header>Bread</Card.Header>
                     <Card.Body>
                         <Card.Img variant="top" alt="landing page for a budget application" src={Bread} />
                         <Card.Text>
-                            Budgetting application that helps users keep track of thier transactions.
+                            Budgeting application that helps users keep track of their transactions.
                         </Card.Text>
                         <Button variant="primary" style={{ margin: '.5rem' }} onClick={() => window.open('https://save-your-bread.netlify.app/')}>Live Application</Button>
                         <Button variant="primary" onClick={() => window.open('https://github.com/Tpichardo/Budget-Bread-react')}>Github Repo</Button>
                     </Card.Body>
                 </Card>
-                <Card className="text-center" style={{ width: '35rem', margin: '1.8rem' }}>
-                    <Card.Header>Social Karma</Card.Header>
+                <Card className="text-center card">
+                    <Card.Header>Nutribot</Card.Header>
                     <Card.Body>
                         <Card.Img variant="top" alt="home page for a workout buddy app with two people exercising" src={Nutribot} />
                         <Card.Text>
