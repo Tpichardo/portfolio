@@ -1,0 +1,13 @@
+.project_cards {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 60em) {
+  .project_cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
