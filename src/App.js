@@ -5,6 +5,7 @@ import About from './Components/About';
 import Skills from './Components/Skills-Tools';
 import Projects from './Components/Projects';
 import Contact from './Components/Contact';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 
 function App() {
