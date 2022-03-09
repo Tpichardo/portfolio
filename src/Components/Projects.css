@@ -1,13 +1,22 @@
-.project_cards {
+.projects {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 2.5rem 0 2rem 0;
+}
+.card {
+  max-width: 35rem;
+  margin: 1.8rem;
 }
 
-@media (max-width: 60em) {
+@media (min-width: 50em) {
   .project_cards {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+  }
+  .projects {
+    display: flex;
+    text-align: start;
+    margin: 1rem;
   }
 }
